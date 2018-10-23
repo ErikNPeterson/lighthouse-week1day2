@@ -8,8 +8,7 @@ function diceRoller(rolls){
   };
   var arrayOfRolls = [];
   for (let i = 0; i < rolls; i++) {
-    var rollNumber = Math.floor(Math.random() * 6) + 1;
-    arrayOfRolls.push(rollNumber);
+    arrayOfRolls.push(Math.floor(Math.random() * 6) + 1);
   }
   return "Rolled dice: " + arrayOfRolls + ".";
 }
